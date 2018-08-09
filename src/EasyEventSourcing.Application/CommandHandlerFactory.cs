@@ -17,7 +17,7 @@ namespace EasyEventSourcing.Application
 
         public CommandHandlerFactory(IEventStore eventStore)
         {
-            Func<IRepository> newTransientRepo = () => new Repository(eventStore);
+            Func<IRepository> newTransientRepo = () => new Repository(eventStore, new EventStreamCreator());
 
             this.RegisterHandlerFactoryWithTypes(
                 () => new ShoppingCartHandler(newTransientRepo()),

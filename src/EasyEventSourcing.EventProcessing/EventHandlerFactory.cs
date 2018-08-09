@@ -27,7 +27,7 @@ namespace EasyEventSourcing.EventProcessing
                 typeof(CartCreated), typeof(ProductAddedToCart), typeof(ProductRemovedFromCart), typeof(CartEmptied), typeof(CartCheckedOut));
 
             this.RegisterHandlerFactoryWithTypes(
-                () => new OrderEventHandler(new Repository(eventStore), dispatcher),
+                () => new OrderEventHandler(new Repository(eventStore, new EventStreamCreator()), dispatcher),
                 typeof(OrderCreated), typeof(PaymentReceived), typeof(ShippingAddressConfirmed));
         }
 

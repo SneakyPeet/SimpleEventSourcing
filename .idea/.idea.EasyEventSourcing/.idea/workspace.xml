@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c48c126-3444-47da-ba53-39c7de7479ed" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/EasyEventSourcing.EventSourcing.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/EasyEventSourcing.EventSourcing.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EasyEventSourcing.Messages/Script.fsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyEventSourcing.Messages/Script.fsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestAggregate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestAggregate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EasyEventSourcing.Tests/EasyEventSourcing.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyEventSourcing.Tests/EasyEventSourcing.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EasyEventSourcing.Tests/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyEventSourcing.Tests/packages.config" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RepositoryTest.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/EventSourcing/Persistence/RepositoryTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+              <folding>
+                <marker date="1533812328363" expanded="true" signature="6:373" ph="..." />
+                <marker date="1533812328363" expanded="true" signature="434:2194" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="487:1949" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="547:1044" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="704:836" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="1127:1943" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="1332:1513" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="2052:2192" ph="{...}" />
+                <marker date="1533812328363" expanded="true" signature="2119:2186" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Repository.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/Repository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <marker date="1533812157674" expanded="true" signature="6:146" ph="..." />
+                <marker date="1533812157674" expanded="true" signature="201:1305" ph="{...}" />
+                <marker date="1533812157674" expanded="true" signature="246:1303" ph="{...}" />
+                <marker date="1533812157674" expanded="true" signature="428:517" ph="{...}" />
+                <marker date="1533812157674" expanded="true" signature="584:829" ph="{...}" />
+                <marker date="1533812157674" expanded="true" signature="889:1297" ph="{...}" />
+                <marker date="1533812157674" expanded="true" signature="1002:1135" ph="{...}" />
+                <marker date="1533812157674" expanded="true" signature="1228:1287" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IEvent</find>
+      <find>new T()</find>
+      <find>Streamidentifier Id re</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Domain/Orders/OrderHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Domain/Orders/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/EventSourcing/Persistence/RepositoryTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestInitializationEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Messages.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IEventStreamInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Domain/EventStream.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/EventStreamCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Domain/StreamIdentifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/AssemblyInfo.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Store.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Domain/Aggregate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Script.fsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Orders.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/AggregateTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Data/InMemoryEventStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Application/CommandHandlerFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestAggregate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Exceptions/NoEventApplyMethodRegisteredException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/InvalidEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Store/ShoppingCartTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Helpers/Specification.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/Repository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Helpers/TestEventStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IEventStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EasyEventSourcing.Data/MongoDb/ShoppingCartEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.Messages/Messages.fs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.Messages/Script.fsx" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestAggregate.cs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestInitializationEvent.cs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IEventStreamCreator.cs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IEventStreamInitializer.cs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/EventStreamCreator.cs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/Repository.cs" />
+        <option value="$PROJECT_DIR$/src/EasyEventSourcing.Tests/EventSourcing/Persistence/RepositoryTest.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="701" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Application" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Domain" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.EventSourcing" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.EventSourcing" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Persistence" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Core" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Core" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Helpers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Helpers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Store" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EventSourcing" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="EasyEventSourcing (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EasyEventSourcing.Tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="EventSourcing" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Persistence" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="RiderNUnitUnitTestingPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.3291536" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3291536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.3296875" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3291536" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Data/MongoDb/ShoppingCartEventHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <marker date="1533801897024" expanded="false" signature="6:155" ph="..." />
+            <marker date="1533801897024" expanded="true" signature="448:2085" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="544:590" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="635:915" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="728:870" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="967:1566" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1149:1220" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1237:1525" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1348:1509" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1622:1793" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1838:1972" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="2020:2079" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Domain/Orders/Order.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1533801897116" expanded="false" signature="6:196" ph="..." />
+            <marker date="1533801897116" expanded="true" signature="276:2271" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="333:610" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="814:890" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="972:1077" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1101:1121" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1167:1222" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1282:1478" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1357:1468" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1536:1605" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1632:1795" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1692:1785" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1843:1896" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1933:2162" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="2006:2092" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="2210:2265" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Domain/Orders/OrderHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <marker date="1533801897116" expanded="false" signature="6:182" ph="..." />
+            <marker date="1533801897116" expanded="true" signature="391:1220" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="499:561" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="606:761" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="817:1002" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1049:1214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Orders.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <marker date="1533801897656" expanded="true" signature="50:88" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="105:151" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="171:261" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="280:328" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="351:397" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="427:516" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="548:616" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="637:685" ph="= { ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Messages.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Store/ShoppingCartTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <marker date="1533801897660" expanded="false" signature="6:201" ph="..." />
+            <marker date="1533801897660" expanded="true" signature="249:3865" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="295:3862" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="571:729" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="782:1013" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1068:1316" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1364:1693" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1743:2288" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2078:2258" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2350:2502" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2566:2770" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2839:3039" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3103:3263" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3300:3429" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3469:3625" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3669:3856" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Store.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="49:87" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="108:175" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="194:259" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="283:371" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="397:483" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="512:580" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="610:676" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="693:740" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="759:805" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="821:868" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="890:936" ph="= { ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Data/MongoDb/ShoppingCartEventHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <marker date="1533801897024" expanded="false" signature="6:155" ph="..." />
+            <marker date="1533801897024" expanded="true" signature="448:2085" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="544:590" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="635:915" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="728:870" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="967:1566" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1149:1220" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1237:1525" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1348:1509" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1622:1793" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="1838:1972" ph="{...}" />
+            <marker date="1533801897024" expanded="true" signature="2020:2079" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Domain/Orders/Order.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1533801897116" expanded="false" signature="6:196" ph="..." />
+            <marker date="1533801897116" expanded="true" signature="276:2271" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="333:610" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="814:890" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="972:1077" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1101:1121" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1167:1222" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1282:1478" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1357:1468" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1536:1605" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1632:1795" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1692:1785" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1843:1896" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1933:2162" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="2006:2092" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="2210:2265" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Domain/Orders/OrderHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <marker date="1533801897116" expanded="false" signature="6:182" ph="..." />
+            <marker date="1533801897116" expanded="true" signature="391:1220" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="499:561" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="606:761" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="817:1002" ph="{...}" />
+            <marker date="1533801897116" expanded="true" signature="1049:1214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Orders.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <marker date="1533801897656" expanded="true" signature="50:88" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="105:151" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="171:261" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="280:328" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="351:397" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="427:516" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="548:616" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="637:685" ph="= { ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Messages.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Store.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="49:87" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="108:175" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="194:259" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="283:371" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="397:483" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="512:580" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="610:676" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="693:740" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="759:805" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="821:868" ph="= { ..." />
+            <marker date="1533801897656" expanded="true" signature="890:936" ph="= { ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/AssemblyInfo.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="56:146" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="148:335" ph="// General Information about an assembly is controlled through the following  ..." />
+            <marker date="1533801897656" expanded="true" signature="348:1498" ph="AssemblyTitle(&quot;EasyEventSourcing.Messages&quot;)&gt;] ..." />
+            <marker date="1533801897656" expanded="true" signature="690:900" ph="// Setting ComVisible to false makes the types in this assembly not visible  ..." />
+            <marker date="1533801897656" expanded="true" signature="1079:1414" ph="// Version information for an assembly consists of the following four values: ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Messages/Script.fsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/InvalidEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1533801897656" expanded="true" signature="81:163" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="115:161" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/AggregateTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="6:203" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="243:2025" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="295:2023" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="387:457" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="554:641" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="724:913" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1002:1210" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1283:1455" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1531:1744" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1822:2017" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Helpers/Specification.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <marker date="1533801897660" expanded="false" signature="6:345" ph="..." />
+            <marker date="1533801897660" expanded="true" signature="395:2472" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="421:2470" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="567:792" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="949:1024" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1257:1594" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1656:1715" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1776:1994" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2033:2131" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2238:2353" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2404:2464" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Helpers/TestEventStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <marker date="1533801897660" expanded="false" signature="6:236" ph="..." />
+            <marker date="1533801897660" expanded="true" signature="286:1851" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="328:1849" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="535:767" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="607:704" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="827:1284" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="883:1261" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1025:1128" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1149:1247" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1329:1516" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1448:1506" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1559:1750" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1784:1843" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Domain/Store/ShoppingCartTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <marker date="1533801897660" expanded="false" signature="6:201" ph="..." />
+            <marker date="1533801897660" expanded="true" signature="249:3865" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="295:3862" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="571:729" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="782:1013" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1068:1316" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1364:1693" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="1743:2288" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2078:2258" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2350:2502" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2566:2770" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="2839:3039" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3103:3263" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3300:3429" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3469:3625" ph="{...}" />
+            <marker date="1533801897660" expanded="true" signature="3669:3856" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Domain/StreamIdentifier.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="6:63" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="113:684" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="149:682" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="209:625" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="268:383" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="430:543" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="6:59" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="114:277" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="149:275" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Domain/Aggregate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding>
+            <marker date="1533801897656" expanded="true" signature="48:115" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="100:113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <marker date="1533801897656" expanded="true" signature="81:173" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="112:171" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="145:165" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestAggregate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <marker date="1533810715669" expanded="false" signature="6:84" ph="..." />
+            <marker date="1533810715669" expanded="true" signature="132:988" ph="{...}" />
+            <marker date="1533810715669" expanded="true" signature="170:986" ph="{...}" />
+            <marker date="1533810715669" expanded="true" signature="223:365" ph="{...}" />
+            <marker date="1533810715669" expanded="true" signature="415:435" ph="{...}" />
+            <marker date="1533810715669" expanded="true" signature="487:574" ph="{...}" />
+            <marker date="1533810715669" expanded="true" signature="775:879" ph="{...}" />
+            <marker date="1533810715669" expanded="true" signature="922:980" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Application/CommandHandlerFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="116" />
+          <folding>
+            <marker date="1533801896904" expanded="false" signature="6:388" ph="..." />
+            <marker date="1533801896904" expanded="true" signature="429:1985" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="495:1983" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="680:1239" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="1338:1483" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="1387:1473" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="1571:1977" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="1650:1889" ph="{...}" />
+            <marker date="1533801896904" expanded="true" signature="1803:1875" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Domain/EventStream.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="6:131" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="181:1999" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="221:1997" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="373:550" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="697:796" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="954:1038" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1088:1217" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1114:1207" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1257:1526" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1366:1470" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1592:1713" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1642:1703" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1772:1838" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="1868:1922" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IEventStore.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <marker date="1533801897656" expanded="false" signature="6:113" ph="..." />
+            <marker date="1533801897656" expanded="true" signature="168:340" ph="{...}" />
+            <marker date="1533801897656" expanded="true" signature="203:338" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/EventStreamCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1533812081942" expanded="true" signature="6:146" ph="..." />
+            <marker date="1533812081942" expanded="true" signature="202:1203" ph="{...}" />
+            <marker date="1533812081942" expanded="true" signature="240:1201" ph="{...}" />
+            <marker date="1533812081942" expanded="true" signature="460:922" ph="{...}" />
+            <marker date="1533812081942" expanded="true" signature="596:756" ph="{...}" />
+            <marker date="1533812081942" expanded="true" signature="756:880" ph="{...}" />
+            <marker date="1533812081942" expanded="true" signature="1091:1195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/IEventStreamInitializer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <marker date="1533812092682" expanded="true" signature="54:175" ph="{...}" />
+            <marker date="1533812092682" expanded="true" signature="123:173" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.EventSourcing/Persistence/Repository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1533812157674" expanded="true" signature="6:146" ph="..." />
+            <marker date="1533812157674" expanded="true" signature="201:1305" ph="{...}" />
+            <marker date="1533812157674" expanded="true" signature="246:1303" ph="{...}" />
+            <marker date="1533812157674" expanded="true" signature="428:517" ph="{...}" />
+            <marker date="1533812157674" expanded="true" signature="584:829" ph="{...}" />
+            <marker date="1533812157674" expanded="true" signature="889:1297" ph="{...}" />
+            <marker date="1533812157674" expanded="true" signature="1002:1135" ph="{...}" />
+            <marker date="1533812157674" expanded="true" signature="1228:1287" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/Core/Helpers/TestInitializationEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <marker date="1533810799777" expanded="true" signature="82:309" ph="{...}" />
+            <marker date="1533810799777" expanded="true" signature="134:307" ph="{...}" />
+            <marker date="1533810799777" expanded="true" signature="191:246" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EasyEventSourcing.Tests/EventSourcing/Persistence/RepositoryTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <marker date="1533812328363" expanded="true" signature="6:373" ph="..." />
+            <marker date="1533812328363" expanded="true" signature="434:2194" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="487:1949" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="547:1044" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="704:836" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="1127:1943" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="1332:1513" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="2052:2192" ph="{...}" />
+            <marker date="1533812328363" expanded="true" signature="2119:2186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_EasyEventSourcing.1789569297.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="EasyEventSourcing.sln" t="IncludeFlat" />
+      <e p="ReadMe.md" t="Include" />
+      <e p="Solution Items" t="Include" />
+      <e p="packages" t="ExcludeRecursive">
+        <e p="NUnit3TestAdapter.3.10.0/build/net35/Mono.Cecil.dll" t="Include" />
+        <e p="NUnit3TestAdapter.3.10.0/build/net35/NUnit3.TestAdapter.dll" t="Include" />
+        <e p="NUnit3TestAdapter.3.10.0/build/net35/NUnit3.TestAdapter.pdb" t="Include" />
+        <e p="NUnit3TestAdapter.3.10.0/build/net35/nunit.engine.api.dll" t="Include" />
+        <e p="NUnit3TestAdapter.3.10.0/build/net35/nunit.engine.dll" t="Include" />
+      </e>
+      <e p="src/EasyEventSourcing.Application" t="IncludeRecursive">
+        <e p="Bootstrapper.cs" t="Include" />
+        <e p="CommandDispatcher.cs" t="Include" />
+        <e p="CommandHandlerFactory.cs" t="Include" />
+        <e p="EasyEventSourcing.Application.csproj" t="IncludeRecursive" />
+        <e p="ICommandHandlerFactory.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="src/EasyEventSourcing.Data" t="IncludeRecursive">
+        <e p="EasyEventSourcing.Data.csproj" t="IncludeRecursive" />
+        <e p="IEventObserver.cs" t="Include" />
+        <e p="InMemoryEventStore.cs" t="Include" />
+        <e p="MongoDb" t="Include">
+          <e p="MongoDb.cs" t="Include" />
+          <e p="ReadModels" t="Include">
+            <e p="ShoppingCartItemReadModel.cs" t="Include" />
+            <e p="ShoppingCartReadModel.cs" t="Include" />
+          </e>
+          <e p="ShoppingCartEventHandler.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="src/EasyEventSourcing.Domain" t="IncludeRecursive">
+        <e p="EasyEventSourcing.Domain.csproj" t="IncludeRecursive" />
+        <e p="Orders" t="Include">
+          <e p="CannotCompleteOrderException.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="OrderHandler.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Shipping" t="Include">
+          <e p="OrderEventHandler.cs" t="Include" />
+          <e p="ShippingProcess.cs" t="Include" />
+        </e>
+        <e p="Store" t="Include">
+          <e p="CannotCheckoutEmptyCartException.cs" t="Include" />
+          <e p="CartAlreadyCheckedOutException.cs" t="Include" />
+          <e p="ShoppingCart.cs" t="Include" />
+          <e p="ShoppingCartHandler.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="src/EasyEventSourcing.EventProcessing" t="IncludeRecursive">
+        <e p="EasyEventSourcing.EventProcessing.csproj" t="IncludeRecursive" />
+        <e p="EventDispatcher.cs" t="Include" />
+        <e p="EventHandlerFactory.cs" t="Include" />
+        <e p="EventProcessor.cs" t="Include" />
+        <e p="IEventHandlerFactory.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="src/EasyEventSourcing.EventSourcing" t="IncludeRecursive">
+        <e p="Domain" t="Include">
+          <e p="Aggregate.cs" t="Include" />
+          <e p="DomainException.cs" t="Include" />
+          <e p="EventStream.cs" t="Include" />
+          <e p="ProcessManager.cs" t="Include" />
+          <e p="StreamIdentifier.cs" t="Include" />
+        </e>
+        <e p="EasyEventSourcing.EventSourcing.csproj" t="IncludeRecursive" />
+        <e p="Exceptions" t="Include">
+          <e p="EventSourceException.cs" t="Include" />
+          <e p="EventStreamNotFoundException.cs" t="Include" />
+          <e p="NoCommandHandlerRegisteredException.cs" t="Include" />
+          <e p="NoEventApplyMethodRegisteredException.cs" t="Include" />
+          <e p="NoEventHandlerMethodRegisteredException.cs" t="Include" />
+          <e p="StreamIdentifierException.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="ICommandDispatcher.cs" t="Include" />
+          <e p="ICommandHandler.cs" t="Include" />
+          <e p="IEventDispatcher.cs" t="Include" />
+          <e p="IEventHandler.cs" t="Include" />
+          <e p="IHandler.cs" t="Include" />
+        </e>
+        <e p="Persistence" t="Include">
+          <e p="EventStoreStream.cs" t="Include" />
+          <e p="EventStreamCreator.cs" t="Include" />
+          <e p="IEventStore.cs" t="Include" />
+          <e p="IEventStreamInitializer.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="Repository.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="src/EasyEventSourcing.Messages" t="IncludeRecursive">
+        <e p="AssemblyInfo.fs" t="Include" />
+        <e p="EasyEventSourcing.Messages.fsproj" t="IncludeRecursive" />
+        <e p="Messages.fs" t="Include" />
+        <e p="Orders.fs" t="Include" />
+        <e p="Script.fsx" t="Include" />
+        <e p="Shipping.fs" t="Include" />
+        <e p="Store.fs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="src/EasyEventSourcing.Tests" t="IncludeRecursive">
+        <e p="Core" t="Include">
+          <e p="AggregateTests.cs" t="Include" />
+          <e p="Helpers" t="Include">
+            <e p="InvalidEvent.cs" t="Include" />
+            <e p="TestAggregate.cs" t="Include" />
+            <e p="TestEvent.cs" t="Include" />
+            <e p="TestInitializationEvent.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Domain" t="Include">
+          <e p="Helpers" t="Include">
+            <e p="EventStreamEvent.cs" t="Include" />
+            <e p="Specification.cs" t="Include" />
+            <e p="TestEventStore.cs" t="Include" />
+            <e p="TestExtensions.cs" t="Include" />
+          </e>
+          <e p="Store" t="Include">
+            <e p="ShoppingCartTests.cs" t="Include" />
+          </e>
+        </e>
+        <e p="EasyEventSourcing.Tests.csproj" t="IncludeRecursive" />
+        <e p="EventSourcing" t="Include">
+          <e p="Persistence" t="Include">
+            <e p="RepositoryTest.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+      </e>
+      <e p="src/EasyEventSourcing.Ui.Console" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="EasyEventSourcing.Ui.Console.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
