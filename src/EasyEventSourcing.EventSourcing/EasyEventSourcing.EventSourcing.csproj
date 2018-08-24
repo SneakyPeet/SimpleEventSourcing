@@ -44,10 +44,9 @@
     <Compile Include="Exceptions\NoCommandHandlerRegisteredException.cs" />
     <Compile Include="Exceptions\NoEventApplyMethodRegisteredException.cs" />
     <Compile Include="Handlers\IEventHandler.cs" />
-    <Compile Include="Persistence\EventStreamCreator.cs" />
+    <Compile Include="Persistence\HistoryProcessor.cs" />
     <Compile Include="Persistence\IEventStore.cs" />
     <Compile Include="Handlers\IHandler.cs" />
-    <Compile Include="Persistence\IEventStreamInitializer.cs" />
     <Compile Include="Persistence\Repository.cs" />
     <Compile Include="Domain\Aggregate.cs" />
     <Compile Include="Domain\EventStream.cs" />

@@ -7,18 +7,18 @@ using EasyEventSourcing.Messages;
 namespace EasyEventSourcing.EventSourcing.Persistence
 {
     public class Repository : IRepository {
-        private readonly EventStreamCreator creator;
+        private readonly HistoryProcessor processor;
         private readonly IEventStore eventStore;
-        public Repository(IEventStore eventStore, EventStreamCreator creator) {
+        public Repository(IEventStore eventStore, HistoryProcessor processor) {
             this.eventStore = eventStore;
-            this.creator = creator;
+            this.processor = processor;
         }
 
-        public T GetById<T>(Guid id) where T : EventStream, new()
+        public T GetById<T>(Guid id) where T : EventStream
         {
             var streamId = new StreamIdentifier(typeof(T).Name, id);
             var history = this.eventStore.GetByStreamId(streamId);
-            T streamItem = creator.CreateNew<T>(history);
+            T streamItem = processor.Replay<T>(history);
             return streamItem;
         }
 

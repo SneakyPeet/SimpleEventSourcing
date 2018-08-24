@@ -25,7 +25,7 @@ namespace EasyEventSourcing.Tests.Domain.Helpers
 
         protected void And<TEventStream, TEvent>(Guid id, TEvent evt)
             where TEvent : IEvent
-            where TEventStream : EventStream, new()
+            where TEventStream : EventStream
         {
             this.Given<TEventStream, TEvent>(id, evt);
         }

@@ -1,23 +1,31 @@
-﻿using EasyEventSourcing.EventSourcing;
+﻿using System.Security.Policy;
+using EasyEventSourcing.EventSourcing;
 using EasyEventSourcing.EventSourcing.Domain;
+using NUnit.Framework.Internal;
 
 namespace EasyEventSourcing.Tests.Core.Helpers
 {
     class TestAggregate : Aggregate
     {
-        public TestAggregate(int initialState)
+        public TestAggregate(TestInitializationEvent initEvent)
         {
-            this.Validation = false;
-            this.StateUpdated = false;
-            this.InitialState = initialState;
+            this.ApplyChanges(initEvent);
         }
         
-        public TestAggregate() : this(0)
+        public static TestAggregate Create(int initialValue)
         {
+            return new TestAggregate(new TestInitializationEvent(initialValue));
         }
 
+        private void Apply(TestInitializationEvent evt) {
+            this.Validation = false;
+            this.StateUpdated = false;
+            this.InitialState = evt.InitialValue;
+        }
+        
         protected override void RegisterAppliers()
         {
+            this.RegisterApplier<TestInitializationEvent>(this.Apply);
             this.RegisterApplier<TestEvent>((e) => this.Apply(e));
         }
 
