@@ -7,7 +7,7 @@ using EasyEventSourcing.Messages;
 namespace EasyEventSourcing.EventSourcing.Persistence {
     public class HistoryProcessor 
     {
-        public T Replay<T>(IEnumerable<IEvent> history) where T : EventStream
+        public T RebuildAggregate<T>(IEnumerable<IEvent> history) where T : EventStream
         {
             var first = history.First();
             T streamItem;

@@ -18,7 +18,7 @@ namespace EasyEventSourcing.EventSourcing.Persistence
         {
             var streamId = new StreamIdentifier(typeof(T).Name, id);
             var history = this.eventStore.GetByStreamId(streamId);
-            T streamItem = processor.Replay<T>(history);
+            T streamItem = processor.RebuildAggregate<T>(history);
             return streamItem;
         }
 
