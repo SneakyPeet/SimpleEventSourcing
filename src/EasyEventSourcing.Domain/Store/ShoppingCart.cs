@@ -10,8 +10,6 @@ namespace EasyEventSourcing.Domain.Store
 {
     public class ShoppingCart : Aggregate
     {
-        public ShoppingCart() {}
-
         protected override void RegisterAppliers()
         {
             this.RegisterApplier<CartCreated>(this.Apply);
@@ -25,14 +23,14 @@ namespace EasyEventSourcing.Domain.Store
         private bool checkedOut;
         private Guid clientId;
 
-        private ShoppingCart(Guid cartId, Guid customerId)
+        public ShoppingCart(CartCreated initEvent)
         {
-            this.ApplyChanges(new CartCreated(cartId, customerId));
+            this.ApplyChanges(initEvent);
         }
 
         public static ShoppingCart Create(Guid cartId, Guid customerId)
         {
-            return new ShoppingCart(cartId, customerId);
+            return new ShoppingCart(new CartCreated(cartId, customerId));
         }
 
         private void Apply(CartCreated evt)

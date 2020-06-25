@@ -1,23 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using EasyEventSourcing.EventSourcing.Domain;
+using EasyEventSourcing.Messages;
 
 namespace EasyEventSourcing.EventSourcing.Persistence
 {
-    public class Repository : IRepository
-    {
+    public class Repository : IRepository {
+        private readonly HistoryProcessor processor;
         private readonly IEventStore eventStore;
-        public Repository(IEventStore eventStore)
-        {
+        public Repository(IEventStore eventStore, HistoryProcessor processor) {
             this.eventStore = eventStore;
+            this.processor = processor;
         }
 
-        public T GetById<T>(Guid id) where T : EventStream, new()
+        public T GetById<T>(Guid id) where T : EventStream
         {
-            var streamItem = new T();
-            var streamId = new StreamIdentifier(streamItem.Name, id);
+            var streamId = new StreamIdentifier(typeof(T).Name, id);
             var history = this.eventStore.GetByStreamId(streamId);
-            streamItem.LoadFromHistory(history);
+            T streamItem = processor.RebuildAggregate<T>(history);
             return streamItem;
         }
 

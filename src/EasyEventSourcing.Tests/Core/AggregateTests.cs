@@ -15,7 +15,8 @@ namespace EasyEventSourcing.Tests.Core
         [SetUp]
         public void SetUp()
         {
-            this.aggregate = new TestAggregate();
+            this.aggregate = TestAggregate.Create(1978);
+            this.aggregate.Commit();
         }
 
         [Test]

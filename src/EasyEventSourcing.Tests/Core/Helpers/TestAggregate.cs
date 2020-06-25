@@ -1,23 +1,37 @@
-﻿using EasyEventSourcing.EventSourcing;
+﻿using System.Security.Policy;
+using EasyEventSourcing.EventSourcing;
 using EasyEventSourcing.EventSourcing.Domain;
+using NUnit.Framework.Internal;
 
 namespace EasyEventSourcing.Tests.Core.Helpers
 {
     class TestAggregate : Aggregate
     {
-        public TestAggregate()
+        public TestAggregate(TestInitializationEvent initEvent)
         {
-            this.Validation = false;
-            this.StateUpdated = false;
+            this.ApplyChanges(initEvent);
+        }
+        
+        public static TestAggregate Create(int initialValue)
+        {
+            return new TestAggregate(new TestInitializationEvent(initialValue));
         }
 
+        private void Apply(TestInitializationEvent evt) {
+            this.Validation = false;
+            this.StateUpdated = false;
+            this.InitialState = evt.InitialValue;
+        }
+        
         protected override void RegisterAppliers()
         {
+            this.RegisterApplier<TestInitializationEvent>(this.Apply);
             this.RegisterApplier<TestEvent>((e) => this.Apply(e));
         }
 
         public bool StateUpdated { get; internal set; }
         public bool Validation { get; internal set; }
+        public int InitialState { get; internal set; }
 
         public void ExecuteTest()
         {
@@ -30,6 +44,4 @@ namespace EasyEventSourcing.Tests.Core.Helpers
             this.StateUpdated = true;
         }
     }
-
-
 }

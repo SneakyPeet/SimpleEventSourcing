@@ -23,16 +23,12 @@ namespace EasyEventSourcing.Domain.Orders
 
         public static Order Create(Guid orderId, Guid clientId, IEnumerable<OrderItem> items)
         {
-            return new Order(orderId, clientId, items);
+            return new Order(new OrderCreated(orderId, clientId, items.ToArray()));
         }
 
-        private Order(Guid orderId, Guid clientId, IEnumerable<OrderItem> items)
+        private Order(OrderCreated initEvent)
         {
-            this.ApplyChanges(new OrderCreated(orderId, clientId, items.ToArray()));
-        }
-
-        public Order()
-        {
+            this.ApplyChanges(initEvent);
         }
 
         private void Apply(OrderCreated evt)
