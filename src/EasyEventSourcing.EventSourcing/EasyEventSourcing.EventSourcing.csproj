@@ -1,73 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F93C10F-DCBF-454D-91F2-6CD521DEDD9B}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+﻿<Project Sdk="Microsoft.Net.Sdk">
+<PropertyGroup>
     <RootNamespace>EasyEventSourcing.EventSourcing</RootNamespace>
     <AssemblyName>EasyEventSourcing.EventSourcing</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Domain\DomainException.cs" />
-    <Compile Include="Domain\ProcessManager.cs" />
-    <Compile Include="Exceptions\NoEventHandlerMethodRegisteredException.cs" />
-    <Compile Include="Exceptions\EventStreamNotFoundException.cs" />
-    <Compile Include="Handlers\ICommandDispatcher.cs" />
-    <Compile Include="Handlers\IEventDispatcher.cs" />
-    <Compile Include="Persistence\EventStoreStream.cs" />
-    <Compile Include="Exceptions\NoCommandHandlerRegisteredException.cs" />
-    <Compile Include="Exceptions\NoEventApplyMethodRegisteredException.cs" />
-    <Compile Include="Handlers\IEventHandler.cs" />
-    <Compile Include="Persistence\IEventStore.cs" />
-    <Compile Include="Handlers\IHandler.cs" />
-    <Compile Include="Persistence\Repository.cs" />
-    <Compile Include="Domain\Aggregate.cs" />
-    <Compile Include="Domain\EventStream.cs" />
-    <Compile Include="Exceptions\EventSourceException.cs" />
-    <Compile Include="Handlers\ICommandHandler.cs" />
-    <Compile Include="Persistence\IRepository.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Domain\StreamIdentifier.cs" />
-    <Compile Include="Exceptions\StreamIdentifierException.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EasyEventSourcing.Messages\EasyEventSourcing.Messages.fsproj">
-      <Project>{674d8243-e359-4931-bd0d-789ec3526e92}</Project>
-      <Name>EasyEventSourcing.Messages</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+<ItemGroup>
+  <ProjectReference Include="..\EasyEventSourcing.Messages\EasyEventSourcing.Messages.fsproj" />
+</ItemGroup>
 </Project>

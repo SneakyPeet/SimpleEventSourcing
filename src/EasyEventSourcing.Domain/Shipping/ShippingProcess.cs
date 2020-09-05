@@ -10,10 +10,10 @@ namespace EasyEventSourcing.Domain.Shipping
     {
         protected override void RegisterAppliers()
         {
-            RegisterApplier<StartedShippingProcess>(this.Apply);
-            RegisterApplier<PaymentConfirmed>(this.Apply);
-            RegisterApplier<AddressConfirmed>(this.Apply);
-            RegisterApplier<OrderDelivered>(this.Apply);
+            RegisterApplier<StartedShippingProcess>(Apply);
+            RegisterApplier<PaymentConfirmed>(Apply);
+            RegisterApplier<AddressConfirmed>(Apply);
+            RegisterApplier<OrderDelivered>(Apply);
         }
 
         private enum Status
@@ -41,21 +41,21 @@ namespace EasyEventSourcing.Domain.Shipping
 
         private void Apply(StartedShippingProcess evt)
         {
-            this.id = evt.OrderId;
+            Id = evt.OrderId;
         }
 
         public void ConfirmPayment(ICommandDispatcher dispatcher)
         {
             if (AwaitingPayment())
             {
-                ApplyChanges(new PaymentConfirmed(this.id));
+                ApplyChanges(new PaymentConfirmed(Id));
                 CompleteIfPossible(dispatcher);
             }
         }
 
         private bool AwaitingPayment()
         {
-            return this.status == Status.Started || this.status == Status.AddressReceived;
+            return status == Status.Started || status == Status.AddressReceived;
         }
 
         private void Apply(PaymentConfirmed evt)
@@ -67,14 +67,14 @@ namespace EasyEventSourcing.Domain.Shipping
         {
             if (AwaitingAddress())
             {
-                ApplyChanges(new AddressConfirmed(this.id));
+                ApplyChanges(new AddressConfirmed(Id));
                 CompleteIfPossible(dispatcher);
             }
         }
 
         private bool AwaitingAddress()
         {
-            return this.status == Status.Started || this.status == Status.PaymentReceived;
+            return status == Status.Started || status == Status.PaymentReceived;
         }
 
         private void Apply(AddressConfirmed evt)
@@ -86,8 +86,8 @@ namespace EasyEventSourcing.Domain.Shipping
         {
             if(status == Status.ReadyToComplete)
             {
-                ApplyChanges(new OrderDelivered(this.id));
-                dispatcher.Send(new CompleteOrder(this.id)); //todo this is wierd should do it after events have been persisted
+                ApplyChanges(new OrderDelivered(Id));
+                dispatcher.Send(new CompleteOrder(Id)); //todo this is wierd should do it after events have been persisted
             }
         }
 
