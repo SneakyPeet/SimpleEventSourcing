@@ -37,14 +37,14 @@ namespace EasyEventSourcing.Domain.Orders
 
         private void Apply(OrderCreated evt)
         {
-            this.id = evt.OrderId;
+            this.Id = evt.OrderId;
         }
 
         public void ProvideShippingAddress(string address)
         {
             if(!this.shippingAddressProvided && !this.completed)
             {
-                this.ApplyChanges(new ShippingAddressConfirmed(this.id, address));
+                this.ApplyChanges(new ShippingAddressConfirmed(this.Id, address));
             }
         }
 
@@ -57,7 +57,7 @@ namespace EasyEventSourcing.Domain.Orders
         {
             if (!this.paidFor && !this.completed)
             {
-                this.ApplyChanges(new PaymentReceived(this.id));
+                this.ApplyChanges(new PaymentReceived(this.Id));
             }
         }
 
@@ -72,7 +72,7 @@ namespace EasyEventSourcing.Domain.Orders
             {
                 throw new CannotCompleteOrderException();
             }
-            this.ApplyChanges(new OrderCompleted(this.id));
+            this.ApplyChanges(new OrderCompleted(this.Id));
         }
 
         private void Apply(OrderCompleted evt)

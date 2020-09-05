@@ -24,9 +24,9 @@ namespace EasyEventSourcing.EventSourcing.Domain
             this.eventAppliers.Add(typeof(TEvent), (x) => applier((TEvent)x));
         }
 
-        protected Guid id { get; set; }
+        protected Guid Id { get; set; }
 
-        public string Name { get { return this.GetType().Name; } }
+        public string Name => this.GetType().Name;
 
         protected void ApplyChanges(IEvent evt)
         {
@@ -34,13 +34,7 @@ namespace EasyEventSourcing.EventSourcing.Domain
             this.changes.Add(evt);
         }
 
-        public StreamIdentifier StreamIdentifier
-        {
-            get
-            {
-                return new StreamIdentifier(this.Name, this.id);
-            }
-        }
+        public StreamIdentifier StreamIdentifier => new StreamIdentifier(this.Name, this.Id);
 
         private void Apply(IEvent evt)
         {
@@ -56,7 +50,7 @@ namespace EasyEventSourcing.EventSourcing.Domain
         {
             foreach(var evt in history)
             {
-                this.Apply(evt);
+                Apply(evt);
             }
         }
 

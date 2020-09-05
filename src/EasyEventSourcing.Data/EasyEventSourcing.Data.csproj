@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
+<Project Sdk="Microsoft.Net.Sdk">
+<PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DAACAFA5-5BF5-497A-A570-1F8C010A7EC7}</ProjectGuid>
@@ -9,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EasyEventSourcing.Data</RootNamespace>
     <AssemblyName>EasyEventSourcing.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,20 +29,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="IEventObserver.cs" />
-    <Compile Include="MongoDb\ShoppingCartEventHandler.cs" />
-    <Compile Include="MongoDb\MongoDb.cs" />
-    <Compile Include="InMemoryEventStore.cs" />
-    <Compile Include="MongoDb\ReadModels\ShoppingCartItemReadModel.cs" />
-    <Compile Include="MongoDb\ReadModels\ShoppingCartReadModel.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\EasyEventSourcing.EventSourcing\EasyEventSourcing.EventSourcing.csproj">
       <Project>{6f93c10f-dcbf-454d-91f2-6cd521dedd9b}</Project>
       <Name>EasyEventSourcing.EventSourcing</Name>
@@ -53,7 +38,10 @@
       <Name>EasyEventSourcing.Messages</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

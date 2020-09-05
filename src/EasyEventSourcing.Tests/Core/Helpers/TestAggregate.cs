@@ -30,6 +30,4 @@ namespace EasyEventSourcing.Tests.Core.Helpers
             this.StateUpdated = true;
         }
     }
-
-
 }
